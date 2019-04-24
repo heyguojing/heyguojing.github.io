@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <script type="text/javascript" src="./layui/layui.js"></script>
+    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/layui_css.css">
+    <script src="js/layui.js" type="text/javascript"></script>
+    <title>content</title>
+</head>
+
+<body style="padding:10px;">
+    <div class="con">
+        <span>管理员列表</span>
+        <button class="layui-btn layui-btn-sm" onclick="contentEdit()">添加</button>
+    </div>
+    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+        <thead>
+            <tr>
+                <th data-field="id" data-key="1-0-0" class=" layui-unselect">
+                    <div class="layui-table-cell laytable-cell-1-0-0">
+                        <span>ID</span>
+                        <span class="layui-table-sort layui-inline">
+                            <i class="layui-edge layui-table-sort-asc" title="升序"></i>
+                            <i class="layui-edge layui-table-sort-desc" title="降序"></i>
+                        </span>
+                    </div>
+                </th>
+                <th data-field="username" data-key="1-0-1" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-1">
+                        <span>用户名</span>
+                    </div>
+                </th>
+                <th data-field="sex" data-key="1-0-2" class=" layui-unselect">
+                    <div class="layui-table-cell laytable-cell-1-0-2">
+                        <span>性别</span>
+                        <span class="layui-table-sort layui-inline">
+                            <i class="layui-edge layui-table-sort-asc" title="升序"></i>
+                            <i class="layui-edge layui-table-sort-desc" title="降序"></i>
+                        </span>
+                    </div>
+                </th>
+                <th data-field="city" data-key="1-0-3" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-3">
+                        <span>城市</span>
+                    </div>
+                </th>
+                <th data-field="sign" data-key="1-0-4" data-minwidth="100" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-4">
+                        <span>签名</span>
+                    </div>
+                </th>
+                <th data-field="experience" data-key="1-0-5" class=" layui-unselect">
+                    <div class="layui-table-cell laytable-cell-1-0-5">
+                        <span>积分</span>
+                        <span class="layui-table-sort layui-inline">
+                            <i class="layui-edge layui-table-sort-asc" title="升序"></i>
+                            <i class="layui-edge layui-table-sort-desc" title="降序"></i>
+                        </span>
+                    </div>
+                </th>
+                <th data-field="score" data-key="1-0-6" class=" layui-unselect">
+                    <div class="layui-table-cell laytable-cell-1-0-6">
+                        <span>评分</span>
+                        <span class="layui-table-sort layui-inline">
+                            <i class="layui-edge layui-table-sort-asc" title="升序"></i>
+                            <i class="layui-edge layui-table-sort-desc" title="降序"></i>
+                        </span>
+                    </div>
+                </th>
+                <th data-field="classify" data-key="1-0-7" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-7">
+                        <span>职业</span>
+                    </div>
+                </th>
+                <th data-field="wealth" data-key="1-0-8" class=" layui-unselect">
+                    <div class="layui-table-cell laytable-cell-1-0-8">
+                        <span>操作</span>
+                        <span class="layui-table-sort layui-inline">
+                            <i class="layui-edge layui-table-sort-asc" title="升序"></i>
+                            <i class="layui-edge layui-table-sort-desc" title="降序"></i>
+                        </span>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-index="0" class="">
+                <td data-field="id" data-key="1-0-0" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-0">10000</div>
+                </td>
+                <td data-field="username" data-key="1-0-1" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-1">user-0</div>
+                </td>
+                <td data-field="sex" data-key="1-0-2" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-2">女</div>
+                </td>
+                <td data-field="city" data-key="1-0-3" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-3">城市-0</div>
+                </td>
+                <td data-field="sign" data-key="1-0-4" data-minwidth="100" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-4">签名-0</div>
+                </td>
+                <td data-field="experience" data-key="1-0-5" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-5">255</div>
+                </td>
+                <td data-field="score" data-key="1-0-6" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-6">57</div>
+                </td>
+                <td data-field="classify" data-key="1-0-7" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-7">作家</div>
+                </td>
+                <td data-field="wealth" data-key="1-0-8" class="">
+                    <button class="layui-btn layui-btn-sm" onclick="contentEdit()">编辑</button>
+                    <button class="layui-btn layui-btn-danger layui-btn-sm" onclick="del()">删除</button>
+                </td>
+            </tr>
+            <tr data-index="1" class="">
+                <td data-field="id" data-key="1-0-0" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-0">10001</div>
+                </td>
+                <td data-field="username" data-key="1-0-1" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-1">user-1</div>
+                </td>
+                <td data-field="sex" data-key="1-0-2" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-2">男</div>
+                </td>
+                <td data-field="city" data-key="1-0-3" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-3">城市-1</div>
+                </td>
+                <td data-field="sign" data-key="1-0-4" data-minwidth="100" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-4">签名-1</div>
+                </td>
+                <td data-field="experience" data-key="1-0-5" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-5">884</div>
+                </td>
+                <td data-field="score" data-key="1-0-6" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-6">27</div>
+                </td>
+                <td data-field="classify" data-key="1-0-7" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-7">词人</div>
+                </td>
+                <td data-field="wealth" data-key="1-0-8" class="">
+                    <button class="layui-btn layui-btn-sm" onclick="contentEdit()">编辑</button>
+                    <button class="layui-btn layui-btn-danger layui-btn-sm" onclick="del()">删除</button>
+                </td>
+            </tr>
+            <tr data-index="2" class="">
+                <td data-field="id" data-key="1-0-0" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-0">10002</div>
+                </td>
+                <td data-field="username" data-key="1-0-1" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-1">user-2</div>
+                </td>
+                <td data-field="sex" data-key="1-0-2" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-2">女</div>
+                </td>
+                <td data-field="city" data-key="1-0-3" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-3">城市-2</div>
+                </td>
+                <td data-field="sign" data-key="1-0-4" data-minwidth="100" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-4">签名-2</div>
+                </td>
+                <td data-field="experience" data-key="1-0-5" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-5">650</div>
+                </td>
+                <td data-field="score" data-key="1-0-6" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-6">31</div>
+                </td>
+                <td data-field="classify" data-key="1-0-7" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-7">酱油</div>
+                </td>
+                <td data-field="wealth" data-key="1-0-8" class="">
+                    <button class="layui-btn layui-btn-sm" onclick="contentEdit()">编辑</button>
+                    <button class="layui-btn layui-btn-danger layui-btn-sm" onclick="del()">删除</button>
+                </td>
+            </tr>
+            <tr data-index="3" class="">
+                <td data-field="id" data-key="1-0-0" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-0">10003</div>
+                </td>
+                <td data-field="username" data-key="1-0-1" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-1">user-3</div>
+                </td>
+                <td data-field="sex" data-key="1-0-2" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-2">女</div>
+                </td>
+                <td data-field="city" data-key="1-0-3" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-3">城市-3</div>
+                </td>
+                <td data-field="sign" data-key="1-0-4" data-minwidth="100" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-4">签名-3</div>
+                </td>
+                <td data-field="experience" data-key="1-0-5" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-5">362</div>
+                </td>
+                <td data-field="score" data-key="1-0-6" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-6">68</div>
+                </td>
+                <td data-field="classify" data-key="1-0-7" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-7">诗人</div>
+                </td>
+                <td data-field="wealth" data-key="1-0-8" class="">
+                    <button class="layui-btn layui-btn-sm" onclick="contentEdit()">编辑</button>
+                    <button class="layui-btn layui-btn-danger layui-btn-sm" onclick="del()">删除</button>
+                </td>
+            </tr>
+            <tr data-index="4" class="">
+                <td data-field="id" data-key="1-0-0" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-0">10004</div>
+                </td>
+                <td data-field="username" data-key="1-0-1" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-1">user-4</div>
+                </td>
+                <td data-field="sex" data-key="1-0-2" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-2">男</div>
+                </td>
+                <td data-field="city" data-key="1-0-3" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-3">城市-4</div>
+                </td>
+                <td data-field="sign" data-key="1-0-4" data-minwidth="100" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-4">签名-4</div>
+                </td>
+                <td data-field="experience" data-key="1-0-5" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-5">807</div>
+                </td>
+                <td data-field="score" data-key="1-0-6" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-6">6</div>
+                </td>
+                <td data-field="classify" data-key="1-0-7" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-7">作家</div>
+                </td>
+                <td data-field="wealth" data-key="1-0-8" class="">
+                    <button class="layui-btn layui-btn-sm" onclick="contentEdit()">编辑</button>
+                    <button class="layui-btn layui-btn-danger layui-btn-sm" onclick="del()">删除</button>
+                </td>
+            </tr>
+            <tr data-index="5" class="">
+                <td data-field="id" data-key="1-0-0" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-0">10005</div>
+                </td>
+                <td data-field="username" data-key="1-0-1" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-1">user-5</div>
+                </td>
+                <td data-field="sex" data-key="1-0-2" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-2">女</div>
+                </td>
+                <td data-field="city" data-key="1-0-3" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-3">城市-5</div>
+                </td>
+                <td data-field="sign" data-key="1-0-4" data-minwidth="100" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-4">签名-5</div>
+                </td>
+                <td data-field="experience" data-key="1-0-5" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-5">173</div>
+                </td>
+                <td data-field="score" data-key="1-0-6" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-6">87</div>
+                </td>
+                <td data-field="classify" data-key="1-0-7" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-7">作家</div>
+                </td>
+                <td data-field="wealth" data-key="1-0-8" class="">
+                    <button class="layui-btn layui-btn-sm" onclick="contentEdit()">编辑</button>
+                    <button class="layui-btn layui-btn-danger layui-btn-sm" onclick="del()">删除</button>
+                </td>
+            </tr>
+            <tr data-index="6" class="">
+                <td data-field="id" data-key="1-0-0" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-0">10006</div>
+                </td>
+                <td data-field="username" data-key="1-0-1" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-1">user-6</div>
+                </td>
+                <td data-field="sex" data-key="1-0-2" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-2">女</div>
+                </td>
+                <td data-field="city" data-key="1-0-3" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-3">城市-6</div>
+                </td>
+                <td data-field="sign" data-key="1-0-4" data-minwidth="100" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-4">签名-6</div>
+                </td>
+                <td data-field="experience" data-key="1-0-5" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-5">982</div>
+                </td>
+                <td data-field="score" data-key="1-0-6" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-6">34</div>
+                </td>
+                <td data-field="classify" data-key="1-0-7" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-7">作家</div>
+                </td>
+                <td data-field="wealth" data-key="1-0-8" class="">
+                    <button class="layui-btn layui-btn-sm" onclick="contentEdit()">编辑</button>
+                    <button class="layui-btn layui-btn-danger layui-btn-sm" onclick="del()">删除</button>
+                </td>
+            </tr>
+            <tr data-index="7" class="">
+                <td data-field="id" data-key="1-0-0" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-0">10007</div>
+                </td>
+                <td data-field="username" data-key="1-0-1" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-1">user-7</div>
+                </td>
+                <td data-field="sex" data-key="1-0-2" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-2">男</div>
+                </td>
+                <td data-field="city" data-key="1-0-3" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-3">城市-7</div>
+                </td>
+                <td data-field="sign" data-key="1-0-4" data-minwidth="100" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-4">签名-7</div>
+                </td>
+                <td data-field="experience" data-key="1-0-5" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-5">727</div>
+                </td>
+                <td data-field="score" data-key="1-0-6" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-6">28</div>
+                </td>
+                <td data-field="classify" data-key="1-0-7" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-7">作家</div>
+                </td>
+                <td data-field="wealth" data-key="1-0-8" class="">
+                    <button class="layui-btn layui-btn-sm" onclick="contentEdit()">编辑</button>
+                    <button class="layui-btn layui-btn-danger layui-btn-sm" onclick="del()">删除</button>
+                </td>
+            </tr>
+            <tr data-index="8" class="">
+                <td data-field="id" data-key="1-0-0" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-0">10008</div>
+                </td>
+                <td data-field="username" data-key="1-0-1" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-1">user-8</div>
+                </td>
+                <td data-field="sex" data-key="1-0-2" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-2">男</div>
+                </td>
+                <td data-field="city" data-key="1-0-3" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-3">城市-8</div>
+                </td>
+                <td data-field="sign" data-key="1-0-4" data-minwidth="100" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-4">签名-8</div>
+                </td>
+                <td data-field="experience" data-key="1-0-5" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-5">951</div>
+                </td>
+                <td data-field="score" data-key="1-0-6" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-6">14</div>
+                </td>
+                <td data-field="classify" data-key="1-0-7" class="">
+                    <div class="layui-table-cell laytable-cell-1-0-7">词人</div>
+                </td>
+                <td data-field="wealth" data-key="1-0-8" class="">
+                    <button class="layui-btn layui-btn-sm" onclick="contentEdit()">编辑</button>
+                    <button class="layui-btn layui-btn-danger layui-btn-sm" onclick="del()">删除</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

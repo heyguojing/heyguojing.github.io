@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ruleContent</title>
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <script type="text/javascript" src="./layui/layui.js"></script>
+    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/layui_css.css">
+    <script src="js/layui.js" type="text/javascript"></script>
+    <style>
+        .back{margin: 10px;display:block;float: right;}
+    </style>
+</head>
+
+<body style="padding:10px;">
+    <div class="con">
+        <span>管理员列表</span>
+    </div>
+    <button class="layui-btn layui-btn-sm back" onclick="back(1);return false;">返回上一级</button>
+    <form class="layui-form" action="" lay-filter="example">
+        <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+            <thead>
+                <tr>
+                    <th data-field="id" data-key="1-0-0" class=" layui-unselect">
+                        <div class="layui-table-cell laytable-cell-1-0-0">
+                            <span>ID</span>
+                        </div>
+                    </th>
+                    <th data-field="username" data-key="1-0-1" class="">
+                        <div class="layui-table-cell laytable-cell-1-0-1">
+                            <span>排序</span>
+                        </div>
+                    </th>
+                    <th data-field="sex" data-key="1-0-2" class=" layui-unselect">
+                        <div class="layui-table-cell laytable-cell-1-0-2">
+                            <span>菜单名称</span>
+                        </div>
+                    </th>
+                    <th data-field="city" data-key="1-0-3" class="">
+                        <div class="layui-table-cell laytable-cell-1-0-3">
+                            <span>controller</span>
+                        </div>
+                    </th>
+                    <th data-field="sign" data-key="1-0-4" data-minwidth="100" class="">
+                        <div class="layui-table-cell laytable-cell-1-0-4">
+                            <span>method</span>
+                        </div>
+                    </th>
+                    <th data-field="score" data-key="1-0-6" class=" layui-unselect">
+                        <div class="layui-table-cell laytable-cell-1-0-7">
+                            <span>是否隐藏</span>
+                        </div>
+                    </th>
+                    <th data-field="classify" data-key="1-0-7" class="">
+                        <div class="layui-table-cell laytable-cell-1-0-7">
+                            <span>是否禁用</span>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-index="0" class="">
+                    <td data-field="id" data-key="1-0-0" class="">
+                        <div class="layui-table-cell laytable-cell-1-0-0">1</div>
+                    </td>
+                    <td data-field="username" data-key="1-0-1" class="">
+                        <input type="text" name="order" class="layui-input">
+                    </td>
+                    <td data-field="sex" data-key="1-0-2" class="">
+                        <input type="text" name="menuName" class="layui-input" value="管理员管理">
+                    </td>
+                    <td data-field="city" data-key="1-0-3" class="">
+                        <input type="text" name="controller" class="layui-input">
+                    </td>
+                    <td data-field="sign" data-key="1-0-4" data-minwidth="100" class="">
+                        <input type="text" name="method" class="layui-input">
+                    </td>
+                    <td data-field="experience" data-key="1-0-5" class="">
+                        <input type="checkbox" name="hide1" lay-skin="primary" title="隐藏" checked>
+                    </td>
+                    <td data-field="score" data-key="1-0-6" class="">
+                        <input type="checkbox" name="forbidden1" lay-skin="primary" title="禁用">
+                    </td>
+                </tr>
+                <tr data-index="0" class="">
+                    <td data-field="id" data-key="1-0-0" class="">
+                        <div class="layui-table-cell laytable-cell-1-0-0">1</div>
+                    </td>
+                    <td data-field="username" data-key="1-0-1" class="">
+                        <input type="text" name="order" autocomplete="off" class="layui-input">
+                    </td>
+                    <td data-field="sex" data-key="1-0-2" class="">
+                        <input type="text" name="menuName" autocomplete="off" class="layui-input" value="权限管理">
+                    </td>
+                    <td data-field="city" data-key="1-0-3" class="">
+                        <input type="text" name="controller" autocomplete="off" class="layui-input">
+                    </td>
+                    <td data-field="sign" data-key="1-0-4" data-minwidth="100" class="">
+                        <input type="text" name="method" autocomplete="off" class="layui-input">
+                    </td>
+                    <td data-field="experience" data-key="1-0-5" class="">
+                        <input type="checkbox" name="hide1" lay-skin="primary" title="隐藏" checked="">
+                    </td>
+                    <td data-field="score" data-key="1-0-6" class="">
+                        <input type="checkbox" name="forbidden1" lay-skin="primary" title="禁用" checked="">
+                    </td>
+                </tr>
+                <tr data-index="0" class="">
+                    <td data-field="id" data-key="1-0-0" class="">
+                        <div class="layui-table-cell laytable-cell-1-0-0">1</div>
+                    </td>
+                    <td data-field="username" data-key="1-0-1" class="">
+                        <input type="text" name="order" autocomplete="off" class="layui-input">
+                    </td>
+                    <td data-field="sex" data-key="1-0-2" class="">
+                        <input type="text" name="menuName" autocomplete="off" class="layui-input" value="管理员管理">
+                    </td>
+                    <td data-field="city" data-key="1-0-3" class="">
+                        <input type="text" name="controller" autocomplete="off" class="layui-input">
+                    </td>
+                    <td data-field="sign" data-key="1-0-4" data-minwidth="100" class="">
+                        <input type="text" name="method" autocomplete="off" class="layui-input">
+                    </td>
+                    <td data-field="experience" data-key="1-0-5" class="">
+                        <input type="checkbox" name="hide1" lay-skin="primary" title="隐藏" checked="">
+                    </td>
+                    <td data-field="score" data-key="1-0-6" class="">
+                        <input type="checkbox" name="forbidden1" lay-skin="primary" title="禁用" checked="">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="layui-btn">保存</button>
+    </form>
+    <script>
+        //ruleContent 
+        layui.use(['layer', 'form', 'layedit'], function () {
+            var layer = layui.layer;
+            var form = layui.form;
+            var layedit = layui.layedit;
+            //表单初始赋值
+        })
+        function back(id){
+            window.location.href="./ruleContent.html?id=" + id;
+        }
+    </script>
+</body>
+
+</html>

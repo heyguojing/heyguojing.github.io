@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* public */
+*{margin: 0;padding: 0;}
+body{background:#fff;color:#333;font-size:12px;font-family:"SimSun","微软雅黑","Arial Narrow";} 
+ul,ol{list-style-type:none;} 
+select,input,img,select{vertical-align:middle;}
+a{text-decoration:none;cursor: default;} 
+span{cursor: default;}
+button, input, select, textarea { font-size:100%; }
+.clear{clear: both;margin: 0;padding: 0;}
+/* login */
+.lay_ui{width: 1200px;margin: 0 auto;height: 450px;background: #ccc;}
+.login{width: 460px;margin:0 auto;margin-top: 30px;margin-bottom: 30px; box-shadow: 4px 4px 20px #ccc;padding: 20px;}
+/* admin */
+.head{width: 100%;margin: 0 auto;height: 50px;line-height: 50px;background: #2e6da4;color: #fff;position: relative;}
+.titl{font-size: 20px;float: left;margin-left: 20px;color: #fff;}
+.info{float: right;margin-right: 10px;font-size: 12px;}
+.info a{color: #fff;}
+.menu{width: 200px;background: #333744;position: absolute;left: 0px;}
+.layui-collapse{border: 0px;}
+.layui-colla-title{border: 0px;background: #4E5465;border-top: 0px;border-bottom: 0px;color: #fff;}
+.layui-colla-content{background: #42485b;padding: 0px;border: 0px;}
+.layui-nav-tree{background: rgba(0,0,0,.3)!important}
+.layui-colla-item{border: 0px;}
+.fram{position: absolute;left: 200px;right: 0px;}
+
+/* content */
+.con{border-bottom: 2px solid #009688;}
+.con span{color: #fff;background: #009688;padding: 10px;margin-left: 30px;line-height: 32px;}
+.con button{float: right;}
+
+/* contentedit */
+.contentedit{width: 450px;padding: 20px; margin: 0 auto;float: left;padding-left: 0px;padding-right: 30px;}
+.contentedit > form{text-align: left !important;}
