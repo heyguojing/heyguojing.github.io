@@ -1,2 +1,0 @@
-# heyguojing.github.io
-blog
